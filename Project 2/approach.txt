@@ -1,0 +1,4 @@
+2. Logging into created user account
+- Store all lines in /etc/shadow
+- Once login is successful, open /etc/shadow in "w" mode. This erases the previous contents. If uname == temp[0], create the line again, this time using the new token and write it to /etc/shadow. Write all the other lines as is with no changes. 
+- Perform similar operation on /etc/passwd. [Split on : and first element in list after split is equal to uname.]
